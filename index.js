@@ -9,3 +9,4 @@ http.createServer(function(request, response) {
 }).listen(process.env.PORT || 3000);
 
 console.log($);
+console.log('I want the jqueryto work');
