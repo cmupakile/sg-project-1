@@ -7,3 +7,5 @@ http.createServer(function(request, response) {
     server.serve(request, response);
   }).resume();
 }).listen(process.env.PORT || 3000);
+
+console.log($);

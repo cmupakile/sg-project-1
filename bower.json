@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "skeleton": "https://github.com/dhgamache/Skeleton.git#^2.0.4"
+  }
 }
