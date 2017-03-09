@@ -5,9 +5,6 @@ var Menu = (function() {
   Menu.prototype.bind = function(game, target, type) {
     this.view = target;
     this.game = game;
-
-
-
     this.score = new Score();
     this.score.initParse();
     if (type === this.MAIN_MENU)

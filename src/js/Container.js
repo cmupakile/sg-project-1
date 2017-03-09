@@ -21,7 +21,7 @@ var Container = (function() {
       y.forEach(function(x, xIndex) {
         newMap[yIndex][xIndex].view = x.view;
         newMap[yIndex][xIndex].view.classList.forEach(function(cls) {
-          if (cls !== 'container__block') {
+          if (cls != 'container__block') {
             newMap[yIndex][xIndex].view.classList.remove(cls);
           }
         });
@@ -96,7 +96,7 @@ var Container = (function() {
         return memo + element.occupy;
       }, 0);
       if (blocks > 0 && !hasTetris) {
-        var tetrisHeight = cur.occupy[2].length === 0 ? 2 : 3;
+        var tetrisHeight = cur.occupy[2].length == 0 ? 2 : 3;
         if (cur.position.y + tetrisHeight >= i) {
           hasTetris = true;
           return;
@@ -264,7 +264,7 @@ var Container = (function() {
           } else {
             block.view.classList.remove('container__block--occupy');
           }
-        } else if (block.occupy !== 0 && !block.view.classList.contains('container__block--occupy')) {
+        } else if (block.occupy != 0 && !block.view.classList.contains('container__block--occupy')) {
           block.view.classList.add('container__block--occupy');
         }
       });
